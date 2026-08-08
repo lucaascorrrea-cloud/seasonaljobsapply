@@ -60,7 +60,8 @@
 
     /* HERO */
     .hero { padding: 100px 0 80px; position: relative; overflow: hidden; background: #0f172a; }
-    .hero-video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; opacity: 1; }
+    .hero-video { display: none; }
+    .hero-bg-img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
     .hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg,rgba(15,23,42,.88) 0%,rgba(30,58,138,.75) 50%,rgba(29,78,216,.65) 100%); z-index: 1; }
     .hero .container { position: relative; z-index: 2; }
     .hero-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
@@ -329,9 +330,7 @@
 
 <!-- HERO -->
 <section class="hero">
-  <video class="hero-video" autoplay muted loop playsinline>
-    <source src="hero-bg.mp4" type="video/mp4">
-  </video>
+  <img class="hero-bg-img" src="capa.jpg" alt="Seasonal Jobs Apply">
   <div class="hero-overlay"></div>
   <div class="container">
     <div class="hero-inner">
