@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="Er019pcW_FNJPPHOaHwCcvCwtKSvL7bIz7alhqnceDc" />
+  <title>Privacy Policy — Seasonal Jobs Apply</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', Arial, sans-serif; background: #f8fafc; color: #1e293b; line-height: 1.7; }
+    .container { max-width: 780px; margin: 0 auto; padding: 48px 24px 80px; }
+    .lang-switch { display: flex; gap: 12px; margin-bottom: 36px; }
+    .lang-btn { padding: 8px 18px; border-radius: 6px; border: 1px solid #cbd5e1; background: white; font-size: 13px; font-weight: 600; cursor: pointer; color: #64748b; font-family: 'Inter', Arial, sans-serif; }
+    .lang-btn.active { background: #2563eb; color: white; border-color: #2563eb; }
+    .policy { display: none; }
+    .policy.active { display: block; }
+    h1 { font-size: 28px; font-weight: 700; color: #0f172a; margin-bottom: 6px; }
+    .subtitle { font-size: 14px; color: #64748b; margin-bottom: 36px; }
+    h2 { font-size: 16px; font-weight: 700; color: #0f172a; margin: 32px 0 10px; padding-bottom: 6px; border-bottom: 1px solid #e2e8f0; }
+    p { margin-bottom: 12px; font-size: 14.5px; color: #334155; }
+    ul { margin: 8px 0 12px 20px; }
+    li { font-size: 14.5px; color: #334155; margin-bottom: 6px; }
+    a { color: #2563eb; }
+    .highlight { background: #eff6ff; border-left: 3px solid #2563eb; border-radius: 0 8px 8px 0; padding: 12px 16px; margin: 16px 0; font-size: 14px; color: #1e40af; }
+    .security-box { background: #f0fdf4; border-left: 3px solid #16a34a; border-radius: 0 8px 8px 0; padding: 12px 16px; margin: 16px 0; font-size: 14px; color: #15803d; }
+    footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid #e2e8f0; font-size: 13px; color: #94a3b8; }
+    .back-link { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: #2563eb; font-weight: 600; margin-bottom: 24px; text-decoration: none; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13.5px; }
+    th { background: #f1f5f9; padding: 8px 12px; text-align: left; font-weight: 600; color: #0f172a; border: 1px solid #e2e8f0; }
+    td { padding: 8px 12px; color: #334155; border: 1px solid #e2e8f0; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <a href="/" class="back-link">← Back to home</a>
+  <div class="lang-switch">
+    <button class="lang-btn active" onclick="switchLang('en', event)">🇺🇸 English</button>
+    <button class="lang-btn" onclick="switchLang('pt', event)">🇧🇷 Português</button>
+  </div>
+
+  <!-- ENGLISH -->
+  <div class="policy active" id="policy-en">
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Seasonal Jobs Apply · Last updated: August 3, 2026</p>
+
+    <div class="highlight">
+      Seasonal Jobs Apply does not collect, store, or share your personal data on any external server. All data stays locally on your device.
+    </div>
+
+    <h2>1. Who We Are</h2>
+    <p>Seasonal Jobs Apply is a Google Chrome extension developed by Lucas Correa. For privacy questions, contact <a href="mailto:lucaascorrrea@gmail.com">lucaascorrrea@gmail.com</a>.</p>
+
+    <h2>2. What Data We Access and Why</h2>
+    <table>
+      <tr><th>Data</th><th>Purpose</th><th>Scope Used</th></tr>
+      <tr><td>Gmail send access</td><td>Send job application emails with résumé attached on behalf of the user</td><td>gmail.send</td></tr>
+      <tr><td>Gmail read access</td><td>Detect recruiter replies to sent application emails by checking thread metadata only</td><td>gmail.readonly</td></tr>
+      <tr><td>Google Drive</td><td>Save and restore application history and settings backup</td><td>drive.file</td></tr>
+      <tr><td>Google Profile</td><td>Display the connected account name, email and photo in the extension popup</td><td>userinfo.profile, userinfo.email</td></tr>
+      <tr><td>Job listing data</td><td>Job title, employer, email, phone and location from seasonaljobs.dol.gov</td><td>—</td></tr>
+      <tr><td>Résumé PDF</td><td>Uploaded by the user and stored locally to attach to application emails</td><td>—</td></tr>
+    </table>
+
+    <h2>3. Data Protection Mechanisms</h2>
+    <div class="security-box">
+      All sensitive data is protected using the following mechanisms:
+    </div>
+    <ul>
+      <li><strong>Local storage only:</strong> All user data — including résumé PDFs, cover letters, application history, profile settings, and Gmail tokens — is stored exclusively in <code>chrome.storage.local</code>, which is sandboxed to the extension and inaccessible to any other application or website.</li>
+      <li><strong>No external transmission:</strong> No personal data is transmitted to any server owned or operated by Seasonal Jobs Apply. The only external communications are directly to Google APIs (Gmail, Drive, People) and Telegram API, using the user's own authenticated tokens.</li>
+      <li><strong>OAuth 2.0 security:</strong> Authentication is handled entirely by Google's OAuth 2.0 system via the Chrome Identity API. No passwords are stored. Tokens are managed by Chrome and automatically refreshed and revoked by Google.</li>
+      <li><strong>Minimal scope principle:</strong> The extension requests only the minimum scopes necessary for its features. <code>gmail.readonly</code> is used only to read thread message counts — email content is never read, displayed, or stored.</li>
+      <li><strong>Encrypted transmission:</strong> All API communications use HTTPS/TLS encryption.</li>
+      <li><strong>No third-party tracking:</strong> The extension contains no analytics, advertising SDKs, or tracking pixels of any kind.</li>
+      <li><strong>Drive backup encryption:</strong> Backup files stored in Google Drive are protected by Google's own security infrastructure and accessible only by the authenticated user.</li>
+    </ul>
+
+    <h2>4. Gmail API Usage — Detailed</h2>
+    <p><strong>gmail.send scope:</strong> Used exclusively to send job application emails via the Gmail API on behalf of the user. Each email is sent only when the user explicitly clicks the "Send Application" button. The email content, recipient, subject, and résumé attachment are composed by the user within the extension. No automated or bulk sending occurs without user action.</p>
+    <p><strong>gmail.readonly scope:</strong> Used exclusively to check whether a recruiter has replied to a previously sent application email. The extension reads only the <em>message count</em> of specific Gmail threads initiated by the user. At no point does the extension read, store, display, or transmit the content, subject, sender, or any other field of any email — including the application emails sent. Only thread metadata (number of messages) is accessed.</p>
+
+    <p>Our use of Gmail API data complies with the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+    <h2>5. Google Drive API Usage</h2>
+    <p>The <code>drive.file</code> scope is used exclusively to create and read backup files in a folder named "SeasonalJobsAutoApply" in the user's own Google Drive. The extension can only access files it creates — it cannot read any other files in the user's Drive.</p>
+
+    <h2>6. Data Retention and Deletion</h2>
+    <p>Since all data is stored locally on the user's device, retention is fully controlled by the user:</p>
+    <ul>
+      <li>Uninstalling the extension from Chrome permanently deletes all stored data</li>
+      <li>Users can clear extension storage via Chrome's "Clear site data" feature</li>
+      <li>Drive backup files can be deleted directly from Google Drive</li>
+      <li>Gmail access can be revoked at <a href="https://myaccount.google.com/permissions" target="_blank">Google Account Permissions</a></li>
+    </ul>
+
+    <h2>7. Data Sharing</h2>
+    <p>We do not sell, rent, trade, or share user data with any third party. The only external services the extension communicates with are:</p>
+    <ul>
+      <li>Google Gmail API — to send emails and detect replies</li>
+      <li>Google Drive API — for backup</li>
+      <li>Google People API — to display account profile</li>
+      <li>Telegram API — for notifications (only if configured by the user)</li>
+      <li>flag.dol.gov — to check official job application status</li>
+    </ul>
+
+    <h2>8. Subscription and Payments</h2>
+    <p>Payments are processed by Gumroad. We do not store payment card information. Please review <a href="https://gumroad.com/privacy" target="_blank">Gumroad's Privacy Policy</a> for details on billing data handling.</p>
+
+    <h2>9. Children's Privacy</h2>
+    <p>This extension is not directed at children under 13. We do not knowingly collect information from children.</p>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>We may update this policy occasionally. The "Last updated" date at the top reflects any changes. Continued use after changes constitutes acceptance.</p>
+
+    <h2>11. Contact</h2>
+    <p><strong>Lucas Correa</strong><br><a href="mailto:lucaascorrrea@gmail.com">lucaascorrrea@gmail.com</a></p>
+
+    <footer>© 2026 Lucas Correa · Seasonal Jobs Apply · <a href="/">seasonaljobsapply.com.br</a></footer>
+  </div>
+
+  <!-- PORTUGUÊS -->
+  <div class="policy" id="policy-pt">
+    <h1>Política de Privacidade</h1>
+    <p class="subtitle">Seasonal Jobs Apply · Última atualização: 3 de agosto de 2026</p>
+
+    <div class="highlight">
+      O Seasonal Jobs Apply não coleta, armazena nem compartilha seus dados pessoais em nenhum servidor externo. Todos os dados permanecem localmente no seu dispositivo.
+    </div>
+
+    <h2>1. Quem Somos</h2>
+    <p>Seasonal Jobs Apply é uma extensão para o Google Chrome desenvolvida por Lucas Correa. Para dúvidas de privacidade, entre em contato: <a href="mailto:lucaascorrrea@gmail.com">lucaascorrrea@gmail.com</a>.</p>
+
+    <h2>2. Quais Dados Acessamos e Por Quê</h2>
+    <table>
+      <tr><th>Dado</th><th>Finalidade</th><th>Escopo</th></tr>
+      <tr><td>Envio pelo Gmail</td><td>Enviar e-mails de candidatura com currículo em nome do usuário</td><td>gmail.send</td></tr>
+      <tr><td>Leitura do Gmail</td><td>Detectar respostas de recrutadores verificando metadados da thread</td><td>gmail.readonly</td></tr>
+      <tr><td>Google Drive</td><td>Salvar e restaurar backup de candidaturas e configurações</td><td>drive.file</td></tr>
+      <tr><td>Perfil Google</td><td>Exibir nome, e-mail e foto da conta conectada no popup</td><td>userinfo.profile, userinfo.email</td></tr>
+      <tr><td>Dados da vaga</td><td>Cargo, empregador, e-mail, telefone e localização do seasonaljobs.dol.gov</td><td>—</td></tr>
+      <tr><td>Currículo PDF</td><td>Enviado pelo usuário e armazenado localmente para anexar aos e-mails</td><td>—</td></tr>
+    </table>
+
+    <h2>3. Mecanismos de Proteção de Dados</h2>
+    <div class="security-box">
+      Todos os dados sensíveis são protegidos pelos seguintes mecanismos:
+    </div>
+    <ul>
+      <li><strong>Armazenamento local:</strong> Todos os dados — incluindo PDFs de currículo, histórico de candidaturas, configurações e tokens do Gmail — são armazenados exclusivamente no <code>chrome.storage.local</code>, isolado da extensão e inacessível a outros aplicativos.</li>
+      <li><strong>Sem transmissão externa:</strong> Nenhum dado pessoal é transmitido a servidores de propriedade do Seasonal Jobs Apply. As únicas comunicações externas são diretamente para as APIs do Google e Telegram, usando os tokens autenticados do próprio usuário.</li>
+      <li><strong>Segurança OAuth 2.0:</strong> A autenticação é feita pelo sistema OAuth 2.0 do Google via Chrome Identity API. Nenhuma senha é armazenada.</li>
+      <li><strong>Princípio do mínimo privilégio:</strong> A extensão solicita apenas os escopos mínimos necessários. O escopo <code>gmail.readonly</code> é usado apenas para verificar a contagem de mensagens de threads — o conteúdo dos e-mails nunca é lido ou armazenado.</li>
+      <li><strong>Transmissão criptografada:</strong> Todas as comunicações com APIs usam HTTPS/TLS.</li>
+      <li><strong>Sem rastreamento:</strong> A extensão não contém analytics, SDKs de publicidade ou pixels de rastreamento.</li>
+    </ul>
+
+    <h2>4. Uso da API do Gmail — Detalhado</h2>
+    <p><strong>Escopo gmail.send:</strong> Usado exclusivamente para enviar e-mails de candidatura via API do Gmail. Cada e-mail é enviado somente quando o usuário clica em "Enviar candidatura". Não há envio automático ou em massa sem ação do usuário.</p>
+    <p><strong>Escopo gmail.readonly:</strong> Usado exclusivamente para verificar se um recrutador respondeu a um e-mail de candidatura enviado anteriormente. A extensão lê apenas a <em>contagem de mensagens</em> de threads específicas. Em nenhum momento o conteúdo, assunto, remetente ou qualquer outro campo de e-mail é lido, armazenado ou transmitido.</p>
+    <p>Nosso uso está em conformidade com a <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Política de Dados do Usuário dos Serviços de API do Google</a>.</p>
+
+    <h2>5. Retenção e Exclusão de Dados</h2>
+    <ul>
+      <li>Desinstalar a extensão exclui permanentemente todos os dados armazenados</li>
+      <li>O acesso ao Gmail pode ser revogado em <a href="https://myaccount.google.com/permissions" target="_blank">Permissões da Conta Google</a></li>
+      <li>Arquivos de backup podem ser excluídos diretamente do Google Drive</li>
+    </ul>
+
+    <h2>6. Compartilhamento de Dados</h2>
+    <p>Não vendemos, alugamos nem compartilhamos dados com terceiros. Os únicos serviços externos são: API do Gmail, API do Drive, API do Google People, API do Telegram e flag.dol.gov.</p>
+
+    <h2>7. Contato</h2>
+    <p><strong>Lucas Correa</strong><br><a href="mailto:lucaascorrrea@gmail.com">lucaascorrrea@gmail.com</a></p>
+
+    <footer>© 2026 Lucas Correa · Seasonal Jobs Apply · <a href="/">seasonaljobsapply.com.br</a></footer>
+  </div>
+</div>
+<script>
+  function switchLang(lang, e) {
+    document.querySelectorAll('.policy').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('policy-' + lang).classList.add('active');
+    e.target.classList.add('active');
+  }
+</script>
+</body>
+</html>
